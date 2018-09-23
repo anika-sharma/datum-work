@@ -1,0 +1,211 @@
+/** Reset CSS**/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	font-family: Hind;
+}
+
+html {
+ 	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f1f2f9;
+}
+
+/** Wrapper **/
+.wrapper {
+	max-width: 1024px;
+	margin: 3% auto;
+	padding: 0 15px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-gap: 15px;
+	grid-auto-rows: auto;
+}
+
+.wrapper>h1 {
+	color: #333;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+/** Flex Continaer **/
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.flex-container > form {
+ 	width: 55%;
+}
+
+.flex-container > div {
+	width: 43%;
+}
+
+/** Table **/
+.light-table {
+	width: 100%;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 5px 5px 15px #dadada;
+}
+
+.light-table tr {
+	height: 40px;
+}
+
+.light-table tr th {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.light-table tr th,
+.light-table tr td {
+	vertical-align: middle;
+	padding: 0 10px;
+}
+
+.light-table>tbody tr {
+	height: calc(100% + 55px);
+}
+
+.light-table>tbody tr:nth-child(odd) {
+	background-color: #f8fafc;
+}
+
+/** Card **/
+.card {
+	padding: 10px 25px;
+	background-color: #fff;
+	box-shadow: 5px 5px 15px #dadada;
+	overflow: scroll;
+}
+
+.card>h2 {
+	font-size: 1.5em;
+	margin: 10px 0;
+}
+
+.card>ul li {
+	margin: 10px 0;
+}
+
+/** Buttons **/
+.white-btn {
+	color: #3c75fd;
+	background-color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	vertical-align: middle;
+	padding: 5px 20px;
+	border-radius: 5px;
+}
+
+.white-btn:hover {
+	color: #fff;
+	background-color: #3c75fd;
+	box-shadow: 3px 3px 15px rgba(127, 127, 127, 0.5);
+}
+
+/** Common **/
+.m-t-5 {
+	margin-top: 5px;
+}
+
+.m-b-5 {
+	margin-bottom: 5px;
+}
+
+.inline-list {
+	padding: 0;
+	margin-bottom: 10px;
+	list-style: none;
+	display: block;
+}
+
+.inline-list>li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.badge {
+	padding: 2px 5px;
+	background-color: #f5f5f5;
+	font-size: 0.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/** Tablet and Mobile view **/
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 768px) {
+	.flex-container {
+		flex-direction: column;
+	}
+
+	.flex-container > form,
+	.flex-container > div{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.inline-list {
+		margin-bottom: 0;
+	}
+
+	.inline-list>li {
+		margin-right: 0;
+		border-radius: 0;
+		border: 1px solid #eee;
+	}
+}

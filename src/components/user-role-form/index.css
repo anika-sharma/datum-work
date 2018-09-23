@@ -1,0 +1,58 @@
+.light-form {
+	padding: 10px 25px;
+	background-color: #fff;
+	box-shadow: 5px 5px 15px #dadada;
+}
+
+.light-form>h2 {
+	font-size: 1.5em;
+	margin: 10px 0;
+}
+
+.light-form>p {
+	color: #565656;
+	line-height: 1.15;
+	margin-bottom: 15px;
+}
+
+.light-form .form-field label {
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.light-form .form-field {
+	margin: 10px 0;
+}
+
+.light-form .form-field select {
+	width: 45%;
+}
+
+.light-form>button {
+	height: 35px;
+	margin: 10px 0;
+	padding: 0 20px;
+	cursor: pointer;
+	font-size: 0.85em;
+	text-transform: uppercase;
+	border-radius: 5px;
+	color: #fff;
+	border: 1px solid #3c75fd;
+	background-color: #3c75fd;
+}
+
+.notification-text {
+	color: #009688;
+	font-weight: bold;
+	margin-top: 10px;
+	display: block;
+}
+
+.error-text {
+	color: #a01e4a;
+	margin-top: 10px;
+	position: relative;
+}
